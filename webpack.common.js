@@ -9,7 +9,7 @@ module.exports = {
     rules: [
       {
         test: /\.html$/,
-        user: ['html-loader']
+        use: ['html-loader']
       },
       {
         test: /\.svg|png|jpg|pdf$/i,

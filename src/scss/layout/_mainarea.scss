@@ -1,0 +1,10 @@
+main {
+  position: relative;
+  margin: 5rem auto;
+  font-size: 3rem;
+
+  & section {
+    padding: 1.5rem;
+    margin: 2rem 0 0 0;
+  }
+}
