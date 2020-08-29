@@ -1,5 +1,5 @@
 function WordGame() {
-  this.totalGuesses = 10;
+  this.totalGuesses = 15;
   this.wins = 0;
   this.losses = 0;
   this.userGuesses = [];
@@ -27,4 +27,10 @@ WordGame.prototype.checkGuess = function (key, arr1, arr2, el) {
   return true
 };
 
+WordGame.prototype.checkGameStatus = function () {
+  if (!this.blanks.includes(" _ ")) {
+    this.wins++
+    return true;
+  }
+}
 export default WordGame;
